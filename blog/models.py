@@ -1,9 +1,6 @@
 from django.db import models
 from django.utils import timezone
 
-# does this mean that django.db exists on my computer and we're going to import from this file?
-# is timezone from settings.py
-
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length=200)
